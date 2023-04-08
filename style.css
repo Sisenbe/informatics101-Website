@@ -1,0 +1,13 @@
+*,
+flex--item ba :hover {
+
+}
+
+flex--item ba::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #fff1c2;
+    display: block; 
+
+}
