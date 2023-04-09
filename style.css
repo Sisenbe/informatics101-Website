@@ -1,13 +1,22 @@
 *,
-flex--item ba :hover {
+
+
+
+.nav_link {
+    color:rgb(0, 0, 0);
+  
+}
+
+
+.nav_link:hover {
+    text-decoration: underline;
+    text-decoration-color: #fecd67;
+    color: #fecd67;
 
 }
 
-flex--item ba::after{
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: #fff1c2;
-    display: block; 
+.nav_link:active {
+    
+
 
 }
