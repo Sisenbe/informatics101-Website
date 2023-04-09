@@ -1,11 +1,10 @@
-*,
-
-
+body {
+    font-family: 'Roboto', sans-serif; background-color: #fff1c2;
+}
 
 .nav_link {
     color:rgb(0, 0, 0);
 }
-
 
 .nav_link:hover {
     text-decoration: underline;
@@ -13,7 +12,7 @@
 
 }
 
-.nav_link .active{
+.nav_link.active {
+    font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: #fecd67;
 }
