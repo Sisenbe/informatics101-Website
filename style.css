@@ -4,19 +4,16 @@
 
 .nav_link {
     color:rgb(0, 0, 0);
-  
 }
 
 
 .nav_link:hover {
     text-decoration: underline;
-    text-decoration-color: #fecd67;
-    color: #fecd67;
+    text-decoration-color: #ffaa39;
 
 }
 
-.nav_link:active {
-    
-
-
+.nav_link .active{
+    text-decoration: underline;
+    text-decoration-color: #fecd67;
 }
