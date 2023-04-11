@@ -42,6 +42,7 @@
 
 </head>
 
+<html class="home">
 <!-- This specifies the main content of the webpage. Used as a generic wrapper for everything.-->
 <body>
     <main> <!-- This specifies the main content of the webpage. Used as a generic wrapper for everything.-->
@@ -51,13 +52,13 @@
             <div class="wmx12 mx-auto">
             
             </div>
-            <div class="wmx12 mx-auto d-flex ai-center flex__fl-shrink0 fs-headline2 g64 "> <!-- This area indicated by the green border-->
+            <nav class="wmx12 mx-auto d-flex ai-center flex__fl-shrink0 fs-headline2 g64 "> <!-- This area indicated by the green border-->
                 <div class="flex--item2 pt12 pb24 "><img src="IMG/Logo.svg"></div>
-                <div class="flex--item"><a class="s-link s-link__grayscale fs-headline2 nav_link" href="#">Home</a></div> 
-                <div class="flex--item"><a class="s-link s-link__grayscale nav_link" href="page2.html">Data Description</a></div> 
-                <div class="flex--item"><a class="s-link s-link__grayscale nav_link" href="page3.html">Data Visualization</a></div>
-                <div class="flex--item"><a class="s-link s-link__grayscale nav_link" href="page4.html">About Us</a></div>
-            </div>
+                <div class="flex--item"><a class="s-link s-link__grayscale fs-headline2" href="index.html">Home</a></div> 
+                <div class="flex--item"><a class="s-link s-link__grayscale" href="data-viz.html">Data Description</a></div> 
+                <div class="flex--item"><a class="s-link s-link__grayscale" href="data-des.html">Data Visualization</a></div>
+                <div class="flex--item"><a class="s-link s-link__grayscale" href="about.html">About Us</a></div>
+            </nav>
         </section>
 
         <!-- Main home page-->
@@ -86,22 +87,5 @@
         
         </section>
     </main>
-
-<script type="text/javascript">
-    // Get all the links
-    var links = document.querySelectorAll('.nav_link');
-    
-    // Loop through each link
-    for (var i = 0; i < links.length; i++) {
-      // Add a click event listener to each link
-      links[i].addEventListener('click', function() {
-        // Remove the active class from all links
-        for (var j = 0; j < links.length; j++) {
-          links[j].classList.remove('active');
-        }
-        // Add the active class to the clicked link
-        this.classList.add('active');
-      });
-    }
-</script>
 </body>
+</html>
