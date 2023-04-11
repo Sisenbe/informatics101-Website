@@ -15,6 +15,6 @@ html.about nav a[href="about.html"]
 }
 
 nav a:hover {
-    border-bottom: 4px solid #FFF1C2;
+    border-bottom: 4px solid #fecd67;
     padding-bottom: 6px;
 }
