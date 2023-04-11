@@ -1,7 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif; background-color: #fff1c2;
+    font-family: 'Roboto', sans-serif; 
+    background-color: #fff1c2;
+    background-image: url(IMG/honeycomb-bg.png);
+    background-size: cover;
 }
-
 
 html.home nav a[href="index.html"],
 html.data-des nav a[href="data-des.html"],
