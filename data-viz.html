@@ -8,34 +8,8 @@
   
   <!-- JS -->
   
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
   
-        function drawChart() {
-  
-          var data = google.visualization.arrayToDataTable([
-            ['Task', 'Hours per Day'],
-            ['Twitter',     16],
-            ['Instagram',      14],
-            ['Pinterest',  13],
-            ['Youtube', 2],
-            ['Facebook',    55]
-          ]);
-  
-          var options = {
-            title: 'Most Visited Social Media Websites in the USA',
-            is3D: true,
-            colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']
-          };
-  
-          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  
-          chart.draw(data, options);
-        }
-  </script>
-  
+
   
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -70,22 +44,27 @@
                       <h1 class="fs-display1"> DATA DESCRIPTION PAGE </h1> 
                       <p>Description</p>
                   </div>
-                      
-                  </div> 
               </div>
           </section>
   
-          <section class="ba bc-red-500 mt48"> 
+        <section class="ba bc-red-500 mt48"> 
               <div class="wmx12 mx-auto"></div>
               <div class="wmx12 mx-auto d-flex flex__fl-equal ba baw3 bc-green-500">
                   <div class="flex--item p32 ba"><h1>Icon #1</h1></div> 
                   <div class="flex--item p32 ba"><h1>Icon #2</h1></div> 
-                  <div class="flex--item p32 ba"><h1>Icon #3</h1></div> 
-                  <div class="flex--item p32 ba"><h1>Icon #4</h1></div> 
-                  <div class="flex--item p32 ba"><h1>Icon #5</h1></div> 
               </div>
-          
-          </section>
+        </section>
+
+        <section>
+            <div>
+                <hr/> 
+                <div class="flex--item p32 ba"><h2>sources</h2></div>
+            </div>
+            <div> 
+                <div class="flex--item p32 ba"><p>vfdkjfndv</p></div>
+                <div class="flex--item p32 ba"><p>fdkljvbkjndsvn</p></div> 
+            </div>
+        </section>
       </main>
   </body>
   </html>
