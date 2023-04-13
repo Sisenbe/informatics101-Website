@@ -5,6 +5,10 @@ body {
     background-size: cover;
 }
 
+.hero-image {
+    background-image: url(IMG/Asset\ 1@3x.png)
+}
+
 html.home nav a[href="index.html"],
 html.data-des nav a[href="data-des.html"],
 html.data-viz nav a[href="data-viz.html"],
