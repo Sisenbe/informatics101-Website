@@ -22,3 +22,29 @@ nav a:hover {
     border-bottom: 4px solid #fecd67;
     padding-bottom: 6px;
 }
+
+/* default state */
+button{
+    background-color:#c0e4e4;
+    border: none; 
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 6px;
+    cursor: pointer; 
+    border-radius: 10px;  
+
+}
+
+/* Hover state */
+button:hover {
+    background-color:#9bdfdf;
+  }
+  
+  /* Selected state */
+  button:active {
+    background-color: #89cece;
+  }
