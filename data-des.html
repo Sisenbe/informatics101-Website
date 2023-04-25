@@ -39,7 +39,7 @@
           }
     </script>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><!--graph 2-->
     <script type="text/javascript">
         google.charts.load("current", {packages:['corechart']});
         google.charts.setOnLoadCallback(drawChart);
@@ -79,7 +79,7 @@
         }
     </script>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><!--graph 3-->
     <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
@@ -108,7 +108,78 @@
     chart.draw(data, options);
   }
     </script>
+
+<title>Animated Column Chart</title>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Website', 'Billions Visitors', { role: "style" } ],
+        ['Google', 13.6,"color: #ffaa39"],
+        ['Yahoo', 11.6, "color: #c0e4e4"],
+        ['Youtube', 6.2, "color: #fecd67"],
+        ['Facebook', 5.7, "color: #7b7c80"],
+        ['Amazon', 1.7, "color: #FFF1C2"]
+    ]);
+
+    var options = {
+      title: 'Most visited website in the world (per billion views)',
+      width: 600,
+      height: 400,
+      animation: {
+        startup: true,
+        duration: 1000,
+        easing: 'in'
+      }
+    };
+
+    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+
+    var button = document.getElementById('change-chart');
+    button.onclick = function() {
+      var newData = google.visualization.arrayToDataTable([
+        ['Website', 'Visitors',{ role: "style" } ],
+        ['Google', 88.7, "color: #ffaa39"],
+        ['YouTube', 33.2, "color: #7b7c80"],
+        ['Facebook:',  22.9, "color: #FFF1C2"],
+        ['Twitter', 6.6, "color: #fecd67"],
+        ['Wikipedia', 6.0, "color: #c0e4e4"]
+      ]);
+
+      options.animation.easing = 'out';
+      chart.draw(newData, options);
+      button.innerText = 'Back to 2011';
+      button.onclick = function() {
+        chart.draw(data, options);
+        button.innerText = 'Switch to 2021';
+        button.onclick = function() {
+          chart.draw(newData, options);
+          button.innerText = 'Back to 2011';
+          button.onclick = function() {
+            chart.draw(data, options);
+            button.innerText = 'Switch to 2021';
+            button.onclick = function() {
+              chart.draw(newData, options);
+              button.innerText = 'Back to 2011';
+            };
+          };
+        };
+      };
+    };
+
+    chart.draw(data, options);
+  }
+</script>
+
+
+
     
+
+
+   
     
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -182,7 +253,8 @@
                 <div class="wmx12 mx-auto">
                 </div>
                 <div class="wmx12 mx-auto d-flex flex__fl-equal "> <!-- This area indicated by the green border-->
-                    <div id="piechart" style="width: 900px; height: 500px;"></div>
+                    <div id="chart_div"></div>
+                        <button id="change-chart">Switch to 2021</button>
                     <div class="flex--item6 p32 ba">    
                         <p>Description</p>
                     </div>
